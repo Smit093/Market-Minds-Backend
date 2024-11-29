@@ -28,7 +28,6 @@ router.get('/', async (req, res) => {
     try {
         const reviews = await Review.find();
         res.status(200).json({ reviews });
-        console.log(reviews);
     } catch (err) {
         console.error("Error fetching reviews:", err);
         res.status(500).json({ message: "Internal Server Error" });
