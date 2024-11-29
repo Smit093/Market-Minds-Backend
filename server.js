@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // CORS configuration
 const cors = require("cors");
 const corsOptions = {
-    origin: ["http://localhost:5173","https://market-minds-frontend.onrender.com/"],
+    origin: ["http://localhost:5173","https://market-minds-frontend.onrender.com"],
 };
 app.use(cors(corsOptions));
 
