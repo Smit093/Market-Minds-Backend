@@ -7,6 +7,7 @@ const User = require("../models/user.js");
 const Review = require("../models/reviews.js")
 const mongoose = require("mongoose");
 require('dotenv').config();
+
 // Connect to MongoDB
 // const localURL = "mongodb://127.0.0.1:27017/Market-Minds"
 const AtlasURL = process.env.ATLASDB_URL
